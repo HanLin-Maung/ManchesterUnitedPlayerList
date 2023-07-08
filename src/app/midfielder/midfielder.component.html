@@ -1,0 +1,21 @@
+<body>
+    <h1>
+        Midfielders
+    </h1>
+
+    <div class="row d-flex flex-row mb-3">
+        <div class="card g-col-4 g-col-md-3 g-col-sm-1 " *ngFor="let midfielder of midfielders">
+            <div class="wrapper">
+                <img src="{{midfielder.img_url}}" alt="Midfielders Images">
+                <div class="content">
+                    <div class="name">{{midfielder.name}}</div>
+                    <div class="backnumber">No.{{midfielder.backnumber}}</div>
+                    <div class="position">{{midfielder.position}}</div>
+                    <a class="card__link" routerLink="/mdinfo/{{midfielder.id}} ">
+                        <span>More Info... </span>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>

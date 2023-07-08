@@ -1,0 +1,23 @@
+<body>
+    <h1>
+        Forward
+    </h1>
+
+    <div class="row d-flex flex-row mb-3">
+        <div class="card g-col-4 g-col-md-3 g-col-sm-1 " *ngFor="let striker of strikers">
+            <div class="wrapper">
+                <img src="{{striker.img_url}}" alt="Striker Images">
+                <div class="content">
+                    <div class="name">{{striker.name}}</div>
+                    <div class="backnumber">No.{{striker.backnumber}}</div>
+                    <div class="position">{{striker.position}}</div>
+                    <a class="card__link" routerLink="/stkinfo/{{striker.id}} ">
+                        <span>More Info... </span>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+
+

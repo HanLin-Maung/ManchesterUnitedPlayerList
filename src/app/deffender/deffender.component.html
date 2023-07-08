@@ -1,0 +1,22 @@
+<body>
+    <h1>
+        DEFENDERS
+    </h1>
+
+    <div class="row d-flex flex-row mb-3">
+        <div class="card g-col-4 g-col-md-3 g-col-sm-1 " *ngFor="let defender of defenders">
+            <div class="wrapper">
+                <img src="{{defender.img_url}}" alt="Defender Images">
+                <div class="content">
+                    <div class="name">{{defender.name}}</div>
+                    <div class="backnumber">No.{{defender.backnumber}}</div>
+                    <div class="position">{{defender.position}}</div>
+                    <a class="card__link" routerLink="/dfinfo/{{defender.id}} ">
+                        <span>More Info... </span>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,21 @@
+<body>
+    <h1>
+        GoalKeepers
+    </h1>
+
+    <div class="row d-flex flex-row mb-3">
+        <div class="card g-col-4 g-col-md-3 g-col-sm-1 " *ngFor="let keeper of goalkeepers">
+            <div class="wrapper">
+                <img src="{{keeper.img_url}}" alt="Keepers Images">
+                <div class="content">
+                    <div class="name">{{keeper.name}}</div>
+                    <div class="backnumber">No.{{keeper.backnumber}}</div>
+                    <div class="position">{{keeper.position}}</div>
+                    <a class="card__link" routerLink="/gkinfo/{{keeper.id}} ">
+                        <span>More Info... </span>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
